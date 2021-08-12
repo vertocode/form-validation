@@ -50,15 +50,7 @@ let b7validator = {
                             }
                          break;
                          case `email`:
-                                if(((input.length >=1) &&
-                                (input.length >=3) &&
-                                (input.search("@")==-1) &&
-                                (input.search("@")==-1) &&
-                                (input.search(" ")==-1) &&
-                                (input.search(" ")==-1) &&
-                                (input.search(".")!=-1) &&
-                                (domiinputnio.indexOf(".") >=1)&&
-                                (input.lastIndexOf(".") < input.length - 1)))
+                                if(input.value.length > 64 || input.value.length < 6)
                                 {
                                     return `E-mail inválido!`
                                 }
